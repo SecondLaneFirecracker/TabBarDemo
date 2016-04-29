@@ -20,6 +20,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSDictionary *tabBarSelectedAttributeDictionary = @{NSForegroundColorAttributeName:[UIColor orangeColor]};
+    UITabBarItem *tabBarItem = [UITabBarItem appearance];
+    [tabBarItem setTitleTextAttributes:tabBarSelectedAttributeDictionary forState:UIControlStateSelected];
 }
 
 - (void)tabBarDidClickPlusButton:(SRTabBar *)tabBar {
